@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>개인정보처리방침 — MoniDock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><a class="brand" href="./">MoniDock</a><nav aria-label="문서"><a href="./">앱 안내</a><a href="privacy.html" aria-current="page">개인정보처리방침</a><a href="terms.html">이용 안내</a></nav></header>
+  <main>
+    <h1>개인정보처리방침</h1>
+    <p class="date">적용일: 2026년 10월 21일</p>
+    <p>이 문서는 MoniDock의 Google Calendar 연동이 데이터를 처리하는 방법을 설명합니다.</p>
+    <h2>1. 접근하는 데이터와 권한</h2>
+    <p>MoniDock은 <code>calendar.app.created</code> 권한을 요청합니다. 이 권한은 앱이 보조 캘린더를 만들고, 해당 캘린더의 일정을 조회·생성·변경·삭제하는 데 사용됩니다. 다른 기존 캘린더 전체를 읽거나 관리하는 권한은 요청하지 않습니다.</p>
+    <h2>2. 사용 목적</h2>
+    <p>PC 일정의 제목, 내용, 날짜와 시간, 알림 설정을 Google Calendar에 복사하여 사용자가 다른 기기에서도 볼 수 있도록 합니다. 일정을 읽고 변경하는 동작은 이 동기화 기능을 위해 수행됩니다.</p>
+    <h2>3. 저장과 전송</h2>
+    <p>원본 일정은 사용자의 PC에 텍스트 파일로 저장됩니다. Google로 보낸 일정은 사용자의 Google 계정에 저장됩니다. Google Calendar 연동은 별도의 MoniDock 중계 서버 없이 PC에서 Google API와 직접 통신합니다.</p>
+    <p>연결 유지에 사용하는 갱신 토큰은 Windows의 사용자별 암호화 기능(DPAPI)으로 보호하여 해당 PC에 저장합니다. 동기화 상태와 캘린더 식별자도 PC에 저장합니다.</p>
+    <h2>4. 공유와 제한적 사용</h2>
+    <p>이 연동은 Google 사용자 데이터를 광고, 판매, 사용자 프로파일링 또는 AI 모델 학습에 사용하지 않습니다. Google API에서 받은 정보는 명시된 일정 동기화 기능에만 사용하며 Google API Services User Data Policy의 Limited Use 요구사항을 준수합니다.</p>
+    <h2>5. 연결 해제와 삭제</h2>
+    <p>MoniDock의 ‘구글 캘린더 연결 해제’ 메뉴를 사용하거나 Google 계정의 연결된 앱 설정에서 접근 권한을 철회할 수 있습니다. 앱에서 연결을 해제하면 PC에 저장된 연결 토큰을 삭제하고 Google 토큰의 철회를 요청합니다.</p>
+    <p>연결을 해제해도 PC의 원본 일정과 Google의 ‘MoniDock 일정’ 캘린더는 남습니다. Google에 복사된 데이터를 삭제하려면 Google Calendar에서 해당 일정이나 캘린더를 삭제해야 합니다. PC의 원본 파일은 별도로 관리합니다.</p>
+    <h2>6. 문의와 변경</h2>
+    <p>문의는 Google 로그인 동의 화면에 표시되는 지원 이메일로 보내 주세요. 데이터 처리 방식이 바뀌면 이 문서를 갱신합니다.</p>
+  </main>
+  <footer>MoniDock · JSCOP</footer>
+</body>
+</html>

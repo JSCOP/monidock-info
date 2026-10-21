@@ -1,0 +1,19 @@
+:root { color-scheme: light; font-family: "Segoe UI", "Malgun Gothic", sans-serif; color: #202a30; background: #fafbf9; }
+* { box-sizing: border-box; }
+body { margin: 0 auto; max-width: 58rem; padding: 0 1.5rem; line-height: 1.85; }
+header { padding: 1.5rem 0; border-bottom: 1px solid #ccd4d0; display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.brand { font-size: 1.4rem; font-weight: 700; text-decoration: none; color: #202a30; }
+nav { display: flex; gap: 1.25rem; flex-wrap: wrap; font-size: .95rem; }
+nav [aria-current] { color: #202a30; font-weight: 700; text-underline-offset: .3em; }
+main { max-width: 45rem; padding: 2.5rem 0 3.5rem; font-size: 1.0625rem; overflow-wrap: anywhere; }
+h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); line-height: 1.3; letter-spacing: -.025em; margin: 0 0 1rem; }
+h2 { font-size: 1.25rem; line-height: 1.5; margin: 2.2rem 0 .7rem; }
+p { margin: 0 0 1.2rem; }
+a { color: #165b4e; text-underline-offset: .2em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid #165b4e; outline-offset: 4px; }
+.lead { font-size: 1.25rem; }
+.date { color: #54645d; font-size: .95rem; margin-bottom: 2rem; }
+code { font-size: .95em; }
+footer { border-top: 1px solid #ccd4d0; padding: 1.25rem 0 2rem; font-size: .875rem; color: #54645d; }
+@media (max-width: 480px) { body { padding: 0 1.1rem; } nav { gap: .85rem; } main { padding-top: 2rem; } }
